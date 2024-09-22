@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ComponentTestControlelr;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,5 +21,8 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+
+Route::get('/component-test1', [ComponentTestControlelr::class, 'showConponent1']);
+Route::get('/component-test2', [ComponentTestControlelr::class, 'showConponent2']);
 
 require __DIR__.'/auth.php';
