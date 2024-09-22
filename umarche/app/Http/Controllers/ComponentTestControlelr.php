@@ -9,7 +9,10 @@ class ComponentTestControlelr extends Controller
     //
 
     public function showConponent1() {
-        return view('test.component-test1');
+
+        $message = 'メッセージ123';
+
+        return view('test.component-test1',compact('message'));
     }
     
     public function showConponent2() {
