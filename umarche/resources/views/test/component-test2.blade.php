@@ -1,6 +1,6 @@
 <x-tests.app>
   <x-slot name="header">
-    こんにちは
+    ヘッダーです。
   </x-slot>
-  コンポーネントテスト１
+  コンポーネントテスト2
 </x-tests.app>
